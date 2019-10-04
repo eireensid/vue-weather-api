@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img class="logo" alt="Vue logo" src="./assets/logo.png">
+    <Weather />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Weather from './components/Weather.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Weather
   }
 }
 </script>
@@ -25,4 +25,12 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+.logo {
+  max-width: 150px;
+}
 </style>
+
+// Задание: требуется сделать веб-форму отображения средней температуры за день и типа погоды (иконки погоды)
+// на следующие 3 дня в Ростове-на-Дону, используя данные API OpenWeatherMap. В работе хочется видеть Bootstrap,
+// CSS, JS. Готовый код залить на GitHub. Если есть желание использовать какой-то js-фреймворк, например Vue.JS
+// – только приветствуется.
